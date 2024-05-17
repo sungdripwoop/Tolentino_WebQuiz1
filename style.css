@@ -1,0 +1,275 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #e3dbdb;
+}
+/*Index*/
+.index{
+  background-image: url("Pictures/backg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 30px;
+  color: rgb(140, 23, 23);
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.indexcontainer{
+  text-align: center;
+}
+.logo{
+  height: auto;
+  width: 400px;
+  margin-bottom: -25px;
+}
+.compName{
+  font-family: "Poetsen One", sans-serif;
+  margin-bottom: 25px;
+}
+.tagline{
+  font-family: "Poetsen One", sans-serif;
+  font-size: 45px;
+  font-weight: semi-bold;
+  margin-top: 25px;
+}
+.indexNavLink{
+  color: rgb(140, 23, 23);
+  font-family: monospace;
+  text-decoration: none;
+  padding: 4px;
+  margin: 15px;
+  border-radius: 5px;
+  font-size: 19px;
+  transition: .4s;
+}
+.indexNavLink:hover{
+  background-color: rgb(140, 23, 23);
+  color: white;
+}
+header { /*Header*/
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 0px;
+  background-color: rgb(140, 23, 23);
+  color: white;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 500px;
+}
+.logoIMG {
+  width: 250px;
+  height: auto;
+  margin: -15px -70px -25px -70px;
+}
+.logoTXT {
+  font-family: "Poetsen One", sans-serif;
+  font-size: 27px;
+  font-weight: lighter;
+  margin-left: 10px; /* Adjust margin as needed */
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+}
+.logoTXT:hover{
+  color: rgb(244, 188, 188)
+}
+.link{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px 10px 25px;
+  margin-right: 5px;
+  transition: .2s
+}
+.link:hover{
+  background-color: antiquewhite;
+  color: rgb(140, 23, 23);
+  border-radius: 3px;
+}
+.link:active{
+  background-color: whitesmoke;
+  color: rgb(91, 5, 5);
+}
+.search{
+  width: 250px;
+  height: auto;
+  background-color: rgb(140, 23, 23);
+  color: white;
+  margin: 15px 0px 15px 0px;
+  border-radius: 10px;
+  border: 2px solid rgb(140, 23, 23);
+  padding: 15px 7px 15px 7px;
+  transition: .4s;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.search::placeholder{
+  color: white;
+} 
+.searchBTN{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 15px 10px 15px 10px;
+  background-color: white;
+  color: rgb(140, 23, 23);
+  border: 2px solid rgb(140, 23, 23);
+  border-radius: 10px;
+  transition: .3s;
+}
+.searchBTN:hover{
+  background-color: rgb(244, 188, 188);
+  color: rgb(140, 23, 23);
+}
+/*End of Header-ish*/
+.homepicContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  margin: auto;
+}
+.ruggsContainer {
+  width: 100%;
+  height: 0;
+  padding-bottom: 37.5%; /* (720 / 1920) * 100 = 37.5% to maintain aspect ratio */
+  overflow: hidden;
+  position: relative;
+}
+.ruggsContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.textoverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Hidden by default */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+.homepicContainer:hover .textoverlay {
+  opacity: 1; /* Visible on hover */
+  visibility: visible; /* Visible on hover */
+}
+.homepicContainer:hover .ruggsContainer img {
+  filter: blur(5px); /* Add blur effect on hover */
+}
+.textoverlay h1 {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: bolder;
+  font-size: 72px;
+  margin: 0 0 75px 0;
+}
+.WeaveNow {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Optional: Background color for better readability */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.WeaveNow:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Optional: Darker background on hover */
+}
+.vaContainer{
+  width: 100%;
+  display: flex;
+  background-color: whitesmoke;
+  margin: 15px 0px 15px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.vaudio{
+  background-color: rgb(221, 221, 221);
+  width:  315px;
+  height: 460px;
+  margin: 25px;
+  padding: 10px;
+  border-radius: 15px;
+}
+.featuredContainer{
+  width: 100%;
+  display: flex;
+  background-color: rgb(233, 212, 212);
+  margin: 15px 0px 15px 0px;
+  align-items: center;
+  justify-content: center;
+}
+/*Footer*/
+footer {
+  width: 100%;
+  background: url('https://i0.wp.com/backgroundabstract.com/wp-content/uploads/edd/2022/02/5594016-e1656071131636.jpg?resize=150150&ssl=1');
+  background-blend-mode: color;
+  background-position: center;
+  background-size: 100%;
+  height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  padding-top: 30px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.PNP {
+  margin-right: 150px;
+}
+
+.FollowUs {
+  flex-direction: column;
+  margin-right: 150px;
+}
+
+.Contacts {
+  flex-direction: column;
+}
+
+.Links a {
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 30px;
+  color: inherit;
+}
+
+.Info1 p {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  line-height: 30px;
+  color: inherit;
+}
+
+.CC {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, .50) url('https://cdn.photoroom.com/v1/assets-cached.jpg?path=backgrounds_v3/black/Photoroom_black_background_extremely_fine_texture_only_black_co_b09b23b6-d407-4a4c-9f3f-dd10de78de15.jpg');
+  background-blend-mode: color;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 150%;
+  height: 60px;
+  color: rgba(255, 255, 255, 0.684);
+  letter-spacing: 3px;
+}
+
+.at {
+  padding-top: 20px;
+}
+/*End of Footer*/
